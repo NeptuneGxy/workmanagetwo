@@ -1,0 +1,22 @@
+GET http://localhost:8080/api/admin/getTeacherByNum
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+
+###
+GET http://localhost:8080/api/admin/addAdmin/2
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+
+###
+POST http://localhost:8080/api/admin/addTeacher
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+Content-Type: application/json
+
+{
+  "name": "单颖",
+  "count": "0",
+  "title": "讲师",
+  "brief": "计算机基础教育",
+  "phone": "18856341000"
+}
+
+###
+

@@ -1,0 +1,54 @@
+POST http://localhost:8080/api/admin/task/addTask
+token: f015b175000179156e77e6d4ec5c67ea7973c84b38a33329c05e0e4320cd0c460875f65a87fa6b2c69e23da3836f90bc
+Content-Type: application/json
+
+{
+  "taskTitle": "教师排球赛",
+  "taskContent": "下周一举行教师排球赛，请有意向者踊跃报名参赛",
+  "taskStatus":1,
+  "deadline": "2019-06-17 12:00"
+}
+
+###
+POST  http://localhost:8080/api/admin/task/offTask
+token:9e019199dfe5f188acf5cf9de7d1c15dfb2c7807b25f292b505da1df074673ba65c446ccb3ee695963b2fd4e2fe036d8
+Content-Type: application/json
+
+{
+  "id":1,
+  "taskTitle": "考试结束",
+  "taskContent": "丹青楼201考试已结束",
+  "taskStatus":1,
+  "deadline": "2019-06-18 15:30"
+}
+
+###
+GET http://localhost:8080/api/admin/task/taskList
+token:b357db05f77ec0bbf6aaa4d2e1bc23f901b89123531ad37aeebb22b43a05a0157b7b1ab8517f71a2e1e25526c977b898
+
+###
+POST http://localhost:8080/api/admin/task/updateTask
+token:9e019199dfe5f188acf5cf9de7d1c15dfb2c7807b25f292b505da1df074673ba65c446ccb3ee695963b2fd4e2fe036d8
+Content-Type: application/json
+
+{
+  "id":1,
+  "taskTitle": "考试结束",
+  "taskContent": "丹青楼201考试已结束",
+  "taskStatus":1,
+  "deadline": "2019-06-18 15:30"
+}
+
+###
+GET http://localhost:8080/api/admin/task/replyList
+token: 302793f475c06a7dd8f4a61d1981cfcee43f390be9a92ce6bebf6cad459032b0538a6c1f5c55a7d582b3bb6bc0dcd95b
+###
+POST http://localhost:8080/api/admin/task/reply/2/1
+token:9e019199dfe5f188acf5cf9de7d1c15dfb2c7807b25f292b505da1df074673ba65c446ccb3ee695963b2fd4e2fe036d8
+Content-Type: application/json
+
+{
+  "content": "啦啦啦啦啦"
+}
+
+###

@@ -1,0 +1,21 @@
+GET http://localhost:8080/api/admin/getAll
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+
+###
+POST http://localhost:8080/api/admin/addInviinfo
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+Content-Type: application/json
+
+{
+  "startTime": "2019-06-28 14:30",
+  "endTime": "2019-06-28 15:30",
+  "address": "丹青302",
+  "cname": "java开发",
+  "num": 2,
+  "status": "未分配"
+}
+
+###
+PATCH http://localhost:8080/api/admin/updateStatus/1
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+###

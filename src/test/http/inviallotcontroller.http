@@ -1,0 +1,12 @@
+GET http://localhost:8080/api/admin/getInviallots
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+
+###
+POST http://localhost:8080/api/admin/addInviallot/2/1,2
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+
+###
+POST http://localhost:8080/api/admin/updateAllot/2/3,4
+token:f7bea2ff6f6e88b70f2f25c28daf0e3c0f451be6821c4addb460838b0fc94ecae4a80bc3f15ab775b685bcb7a4931146
+
+###
